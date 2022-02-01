@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: pg-test-config
+data:
+  spring.profiles.active: prod
+  spring.config.location: classpath:/config/common/
+  spring.datasource.host: postgres-service
+  spring.datasource.port: "5432"
+  spring.datasource.username: postgres_root
