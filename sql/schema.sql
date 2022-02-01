@@ -5,3 +5,10 @@ create table message (
 );
 
 insert into message (message) values ('Hello World');
+
+create table person(
+    id bigserial not null,
+    name varchar(255),
+    account_balance bigint not null default 0,
+    primary key (id)
+)
