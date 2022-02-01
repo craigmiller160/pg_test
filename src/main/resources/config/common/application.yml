@@ -7,3 +7,7 @@ spring:
       ddl-auto: none
   datasource:
     url: jdbc:postgresql://${spring.datasource.host}:${spring.datasource.port}/pg_test
+    hikari:
+      connection-timeout: 10000
+      max-lifetime: 30000
+      validation-timeout: 10000
