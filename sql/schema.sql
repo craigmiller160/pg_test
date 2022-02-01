@@ -6,11 +6,13 @@ create table message (
 
 insert into message (message) values ('Hello World');
 
+drop table person;
 create table person(
     id bigserial not null,
     name varchar(255),
     account_balance bigint not null default 0,
+    version bigint not null default 0,
     primary key (id)
-)
+);
 
 insert into person(name, account_balance) values ('Bob', 100);
