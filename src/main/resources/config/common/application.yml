@@ -1,0 +1,9 @@
+spring:
+  jpa:
+    properties:
+      hibernate.dialect: org.hibernate.dialect.PostgreSQLDialect
+      hibernate.jdbc.time_zone: UTC
+    hibernate:
+      ddl-auto: none
+  datasource:
+    url: jdbc:postgresql://${spring.datasource.host}:${spring.datasource.port}/pg_test
