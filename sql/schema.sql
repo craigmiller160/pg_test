@@ -12,3 +12,5 @@ create table person(
     account_balance bigint not null default 0,
     primary key (id)
 )
+
+insert into person(name, account_balance) values ('Bob', 100);
